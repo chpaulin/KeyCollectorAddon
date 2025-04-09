@@ -1,0 +1,8 @@
+## Interface: 110100
+## Title: KeyCollector
+## Notes: A simple WoW addon to collect current Key.
+## Author: Christian Paulin
+## Version: 1.0
+## SavedVariablesPerCharacter: CurrentKey
+
+KeyCollector.lua
