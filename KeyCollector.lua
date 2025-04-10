@@ -1,9 +1,7 @@
-MYTHICKEYSTONE_ITEMID = 180653
-
 -- Create a frame to handle events
 local frame = CreateFrame("Frame")
 
--- Trigger when the player leaves the world as Saved Variables are not saved until the player logs out
+-- Trigger when the player enters the world
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 
 if not CurrentKey then
