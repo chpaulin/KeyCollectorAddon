@@ -24,8 +24,10 @@ frame:SetScript("OnEvent", function(self, event, ...)
 
             CurrentKey["Key"] = key
             CurrentKey["Level"] = level
-            CurrentKey["Class"] = className
-            CurrentKey["Time"] = time()
+            CurrentKey["Class"] = className            
         end
+
+        -- Update time every run
+        CurrentKey["Time"] = time()
     end)
 end)
