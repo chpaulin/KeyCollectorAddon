@@ -12,6 +12,11 @@ end
 frame:SetScript("OnEvent", function(self, event, ...)  
     C_Timer.NewTicker(5, function()
         local keystoneID = C_MythicPlus.GetOwnedKeystoneChallengeMapID()
+        
+        if(keystoneID == nil) then
+            return
+        end
+        
         local key = C_ChallengeMode.GetMapUIInfo(keystoneID)
         local level = C_MythicPlus.GetOwnedKeystoneLevel()
         local _, className, _, _, _, _, _ = GetPlayerInfoByGUID(UnitGUID("player"))        
@@ -29,4 +34,3 @@ frame:SetScript("OnEvent", function(self, event, ...)
         CurrentKey["Time"] = time()
     end)
 end)
-
